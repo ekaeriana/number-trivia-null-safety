@@ -16,7 +16,6 @@ import 'package:mockito/annotations.dart';
 
 import 'number_trivia_repository_impl_test.mocks.dart';
 
-
 class MockLocalDataSource extends Mock implements NumberTriviaLocalDataSource {}
 
 @GenerateMocks([NetworkInfo])
@@ -28,7 +27,6 @@ class MockLocalDataSource extends Mock implements NumberTriviaLocalDataSource {}
       as: #MockNumberTriviaRemoteDataSourceForTest,
       returnNullOnMissingStub: true),
 ])
-
 void main() {
   late NumberTriviaRepositoryImpl repository;
   late MockNumberTriviaRemoteDataSource mockRemoteDataSource;
@@ -75,6 +73,8 @@ void main() {
     test('should check if device online', () async {
       // assert
       when(mockNetworkInfo.isConnected).thenAnswer((_) async => true);
+      when(mockRemoteDataSource.getConcreteNumberTrivia(tNumber))
+          .thenAnswer((_) async => tNumberTriviaModel);
       // act
       repository.getConcreteNumberTrivia(tNumber);
       // expect
@@ -161,6 +161,8 @@ void main() {
     test('should check if device online', () async {
       // assert
       when(mockNetworkInfo.isConnected).thenAnswer((_) async => true);
+      when(mockRemoteDataSource.getRandomNumberTrivia())
+          .thenAnswer((_) async => tNumberTriviaModel);
       // act
       repository.getRandomNumberTrivia();
       // expect

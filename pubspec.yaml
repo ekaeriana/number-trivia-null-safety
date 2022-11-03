@@ -37,21 +37,17 @@ dependencies:
   equatable: ^2.0.3
   flutter_bloc: ^8.0.1
   get_it: ^7.2.0
+  google_fonts: ^3.0.1
   http: ^0.13.3
   internet_connection_checker: ^1.0.0+1
   shared_preferences: ^2.0.15
 
 dev_dependencies:
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+
+  build_runner: ^2.3.2
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-
-  build_runner: ^2.3.2
   mockito: ^5.0.15
 
 # For information on the generic Dart part of this file, see the

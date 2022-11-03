@@ -5,6 +5,8 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i5;
 
+import 'package:dartz/dartz.dart' as _i3;
+import 'package:mockito/mockito.dart' as _i1;
 import 'package:number_trivia_app/core/error/failure.dart' as _i6;
 import 'package:number_trivia_app/core/usecases/usecase.dart' as _i9;
 import 'package:number_trivia_app/core/util/input_converter.dart' as _i10;
@@ -16,8 +18,6 @@ import 'package:number_trivia_app/features/number_trivia/domain/usecases/get_con
     as _i4;
 import 'package:number_trivia_app/features/number_trivia/domain/usecases/get_random_number_trivia.dart'
     as _i8;
-import 'package:dartz/dartz.dart' as _i3;
-import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values

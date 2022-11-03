@@ -5,12 +5,12 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i4;
 
+import 'package:mockito/mockito.dart' as _i1;
 import 'package:number_trivia_app/core/network/network_info.dart' as _i3;
 import 'package:number_trivia_app/features/number_trivia/data/datasources/number_trivia_remote_data_source.dart'
     as _i5;
 import 'package:number_trivia_app/features/number_trivia/data/models/number_trivia_model.dart'
     as _i2;
-import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values

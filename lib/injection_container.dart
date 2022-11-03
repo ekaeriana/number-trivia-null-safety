@@ -60,7 +60,7 @@ Future<void> init() async {
   sl.registerLazySingleton(() => prefs);
 
   // Register Http client
-  sl.registerLazySingleton(() => http.Client);
+  sl.registerLazySingleton(() => http.Client());
 
   // Register Connection Checker
   sl.registerLazySingleton(() => InternetConnectionChecker());
