@@ -1,5 +1,5 @@
 # clean-architecture-bloc-null-safety
-Number Trivia example app build with Clean Architecture and TDD concept. The course belong to Reso Coder
+Number Trivia example app build with Clean Architecture and TDD concept. This course from Reso Coder (with some modification).
 
 # number_trivia_app
 
